@@ -18,7 +18,7 @@
             return pecas[linha, coluna];
         }
 
-        Peca peca(Posicao pos)
+        public Peca peca(Posicao pos)
         {
             return pecas[pos.linha, pos.coluna];
         }
