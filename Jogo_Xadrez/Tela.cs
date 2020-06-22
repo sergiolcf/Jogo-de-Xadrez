@@ -27,7 +27,10 @@ namespace Jogo_Xadrez
             imprimirConjunto(partida.pecasCaputradas(Cor.Branca));
             Console.WriteLine();
             Console.Write("Pretas: ");
+            ConsoleColor aux = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             imprimirConjunto(partida.pecasCaputradas(Cor.Preta));
+            Console.ForegroundColor = aux;
             Console.WriteLine();
 
         }
